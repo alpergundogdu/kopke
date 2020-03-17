@@ -133,10 +133,10 @@ function kopkeify(str) {
 	var words = str.split(' ')
 	var converted = []
 	for (var i = 0; i < words.length; i++) {
-		words[i] = words[i].toLowerCase()
+		words[i] = words[i].toLowerCase().replace(/[p]/g, 'b')
 		var result = hyphenate(words[i])
 		var finalWord = ''
-		if (result == null) {
+		if (result == null || words[i].length < 3) {
 			finalWord = words[i]
 		} else {
 			finalWord = kopke(result)
