@@ -1,0 +1,32 @@
+
+body {
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 5vw;
+    width: 90vw;
+    height: 40vh;
+    box-sizing: border-box;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+	background-size:25vw;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+#txet {
+	background-image:url(../img/doge.png);
+}
+
+#reslut {
+	background-image:url(../img/cheems.png);
+}
