@@ -146,7 +146,6 @@ function kopkeify(str) {
         words[i] = words[i].toLowerCase().replace(/[p]/g, 'b')
 		var punctuationIndex = getFirstPunctuationAtEnd(words[i])
 		var punctutationPart = ''
-		console.log(punctuationIndex)
 		if (punctuationIndex + 1 != words[i].length) {
 		 	punctutationPart = words[i].substring(punctuationIndex + 1)
 			words[i] = words[i].substring(0, punctuationIndex + 1)
