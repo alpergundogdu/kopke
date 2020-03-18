@@ -30,7 +30,7 @@ var kopkes = [
     ['0100', [0, 2, 1, 3]]
 ]
 
-var punctuation = ['.', ',', ':', '!', '?', '/', '\\', '-']
+var punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
 
 function kopkeHyphen(current, next, currentOneZero, nextOneZero) {
     var result = ''
