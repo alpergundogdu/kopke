@@ -131,12 +131,12 @@ function hyphenate(word) {
 }
 
 function getFirstPunctuationAtEnd(word) {
-	for (var i = word.length - 1; i >= 0; i--) {
-		if (!punctuation.includes(word.charAt(i))) {
-			return i
-		}
-	}
-	return 0
+    for (var i = word.length - 1; i >= 0; i--) {
+        if (!punctuation.includes(word.charAt(i))) {
+            return i
+        }
+    }
+    return 0
 }
 
 function kopkeify(str) {
@@ -144,12 +144,12 @@ function kopkeify(str) {
     var converted = []
     for (var i = 0; i < words.length; i++) {
         words[i] = words[i].toLowerCase().replace(/[p]/g, 'b')
-		var punctuationIndex = getFirstPunctuationAtEnd(words[i])
-		var punctutationPart = ''
-		if (punctuationIndex + 1 != words[i].length) {
-		 	punctutationPart = words[i].substring(punctuationIndex + 1)
-			words[i] = words[i].substring(0, punctuationIndex + 1)
-		}
+        var punctuationIndex = getFirstPunctuationAtEnd(words[i])
+        var punctutationPart = ''
+        if (punctuationIndex + 1 != words[i].length) {
+            punctutationPart = words[i].substring(punctuationIndex + 1)
+            words[i] = words[i].substring(0, punctuationIndex + 1)
+        }
         var result = hyphenate(words[i])
         var finalWord = ''
         if (result == null || words[i].length < 3) {
