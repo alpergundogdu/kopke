@@ -140,6 +140,15 @@ function getFirstPunctuationAtEnd(word) {
 }
 
 function kopkeify(str) {
+    var lines = str.split('\n')
+    var converted = []
+    for (var i = 0; i < lines.length; i++) {
+        converted[converted.length] = kopkeify_line(lines[i])
+    }
+    return converted.join('\n')
+}
+
+function kopkeify_line(str) {
     var words = str.split(' ')
     var converted = []
     for (var i = 0; i < words.length; i++) {
