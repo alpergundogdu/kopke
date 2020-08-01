@@ -1,10 +1,3 @@
-text = document.getElementById("txet")
-result = document.getElementById("reslut")
-
-text.addEventListener("input", function() {
-    result.value = kopkeify(text.value)
-})
-
 var vowel = ['a', 'â', 'e', 'ê', 'ı', 'î', 'i', 'o', 'ô', 'ö', 'u', 'û', 'ü']
 var slices = [
     ['001000', 5],
