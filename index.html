@@ -32,7 +32,7 @@
 		var xhr = new XMLHttpRequest()
 		xhr.addEventListener("load", r => {
 				var code = r.target.responseText
-				var substitutionCmd = "document.querySelectorAll('div,button,a,p,span,h1,h2,h3,h4,h5').forEach(e=>e.childNodes.forEach(c=>{if(c.nodeType===3&&c.textContent)c.textContent=kopkeify(c.textContent)}))"
+				var substitutionCmd = "document.querySelectorAll('div,button,a,p,span,em,strong,i,h1,h2,h3,h4,h5').forEach(e=>e.childNodes.forEach(c=>{if(c.nodeType===3&&c.textContent)c.textContent=kopkeify(c.textContent)}))"
 				var bookmark = "javascript:(function(){" + encodeURIComponent(code + substitutionCmd) + "}())"
 				document.getElementById("bookmarklte").href = bookmark
 			})

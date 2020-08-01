@@ -1,4 +1,4 @@
-var vowel = ['a', 'â', 'e', 'ê', 'ı', 'î', 'i', 'o', 'ô', 'ö', 'u', 'û', 'ü']
+var vowels = 'aâeêıîioôöuûü'
 var slices = [
     ['001000', 5],
     ['000100', 5],
@@ -73,7 +73,7 @@ function wordToOneZero(word) {
     var oneZero = ""
     word = word.toLowerCase()
     for (i = 0; i < word.length; i++) {
-        if (vowel.includes(word.charAt(i))) {
+        if (vowels.includes(word.charAt(i))) {
             oneZero = oneZero + "1"
         } else {
             oneZero = oneZero + "0"
