@@ -1,0 +1,8 @@
+{
+  "name": "kopke",
+  "version": "1.0.0",
+  "description": "Köpkeifier'a hoşgeldinzi",
+  "scripts": {
+    "uglify": "npx uglifyjs js/index.js -c -m toplevel,'reserved=[kopkeify]' --mangle-props -o js/index.min.js"
+  }
+}
